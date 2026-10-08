@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "xitip"
+version = "0.1.0"
+description = "Information Theoretic Inequality Prover (core, Python port of Xitip.jl)"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+
+[project.scripts]
+xitip = "xitip.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["xitip*"]
